@@ -82,9 +82,18 @@ int main2457(int argc, char **argv) {
     return 0;
 }
 
+int convertStringToSignedInteger(char *myString, int strLen);
+int main2770(int argc, char **argv) {
+    printf("Converted %d\n", convertStringToSignedInteger("10", 2));
+    printf("Converted %d\n", convertStringToSignedInteger("0", 1));
+    printf("Converted %d\n", convertStringToSignedInteger("1302", 4));
+    return 0;
+}
+
 int main(int argc, char **argv) {
     main1332(argc, argv);
     main1579(argc, argv);
     main2457(argc, argv);
+    main2770(argc, argv);
     return 0;
 }
