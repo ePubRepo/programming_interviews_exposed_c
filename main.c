@@ -90,10 +90,29 @@ int main2770(int argc, char **argv) {
     return 0;
 }
 
+bool isBigEndian();
+bool isLittleEndian();
+int main5433(int argc, char **argv) {
+    printf("Is Big Endian: %d\n", isBigEndian());
+    printf("Is Little Endian: %d\n", isLittleEndian());
+    return 0;
+}
+
+int numberOfOneBitsInInteger(int input);
+int main5496(int argc, char **argv) {
+   printf("Num of 1 Digits in 1 is: %d\n", numberOfOneBitsInInteger(1));
+   printf("Num of 1 Digits in 0 is: %d\n", numberOfOneBitsInInteger(0));
+   printf("Num of 1 Digits in 2 is: %d\n", numberOfOneBitsInInteger(2));
+   printf("Num of 1 Digits in 3 is: %d\n", numberOfOneBitsInInteger(3));
+   return 0;
+}
+
 int main(int argc, char **argv) {
     main1332(argc, argv);
     main1579(argc, argv);
     main2457(argc, argv);
     main2770(argc, argv);
+    main5433(argc, argv);
+    main5496(argc, argv);
     return 0;
 }
